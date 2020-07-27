@@ -1,0 +1,184 @@
+body {
+    padding: 20px;
+}
+
+.column2 {
+    float: left;
+    width: 50%
+}
+
+#header div {
+    width: 25%;
+    font-family: 'Lato', sans-serif;
+}
+
+#whoWeAre {
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: -.1rem;
+}
+
+#header {
+    padding-bottom: 75px;
+}
+
+#header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.people {
+    padding-bottom: 75px;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.job {
+    writing-mode: vertical-rl;
+    display: inline-block;
+    font-size: .75rem;
+    
+}
+
+img {
+    float: left;
+    width: 200px;
+}
+
+.name {
+    clear: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.columnDown {
+    transform: translateY(75px);
+}
+
+#team {
+    text-align: center;
+    margin: 0 auto;
+    width: 96%;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+#footer {
+    text-align: center;
+    padding-top: 75px;
+}
+
+@media only screen and (max-width: 700px) {
+    .column2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    #header div {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        letter-spacing: -.15rem;
+    }
+
+    #header {
+        padding-bottom: 40px;
+    }
+
+    #team {
+        text-align: left;
+        width: 100%;
+    }
+
+    .people {
+        padding: 0;
+        padding-bottom: 50px;
+        margin-left: 10px;
+    }
+
+    img {
+        width: 35vw;
+    }
+
+    .columnDown {
+        transform: none;
+    }
+
+    .columnDownMobile {
+        transform: translateY(75px);
+    }
+
+    .job {
+        margin-left: 0;
+    }
+} 
+
+
+
+@media only screen and (max-device-width: 480px) {
+    .column2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    #header div {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 6rem;
+        letter-spacing: -.15rem;
+    }
+
+    #header {
+        padding-bottom: 40px;
+        font-size: 1.9rem;
+    }
+
+    #team {
+        text-align: left;
+        width: 100%;
+    }
+
+    .people {
+        padding: 0;
+        padding-bottom: 50px;
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+
+    img {
+        width: 40vw;
+    }
+
+    .columnDown {
+        transform: none;
+    }
+
+    .columnDownMobile {
+        transform: translateY(75px);
+    }
+
+    .job {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+
+    #footer {
+        text-align: center;
+        padding-top: 200px;
+        font-size: 2rem;
+    }
+}
